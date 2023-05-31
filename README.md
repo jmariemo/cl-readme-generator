@@ -1,9 +1,9 @@
 
-  # Jennifer's readme Simulation ![License: MIT license (Massachusetts Institute of Technology)](https://img.shields.io/badge/license-MIT-green.svg)
+  # Jennifer's Readme Walkthru ![License: Internet Systems Consortium (ISC) License](https://img.shields.io/badge/license-ISC-green.svg)
   
   ## Description
 
-  This is a video recording to demonstrate how my readme app works in the command line interface
+  UCB Bootcamp Module 9 Homework Challenge
   
   ## Table of Contents
 
@@ -21,25 +21,25 @@
 
   ## Installation
 
-  Clone the repo, install node modules, and run this puppy!
+  clone repo, install node modules, run that puppy!
 
   ## Usage
 
-  Free use for bootcamp students and the universe alike
+  as you wish
 
   ## License 
 
- This application is covered under MIT license (Massachusetts Institute of Technology).
-https://opensource.org/license/mit/
+ This application is covered under Internet Systems Consortium (ISC) License.
+https://opensource.org/license/isc/
 Click link for details.
 
   ## Contribution Guidelines
 
-  Hmmm. I would rather you not.
+  Don't touch
   
   ## Testing
 
-  Jump in the command line
+  Abc 123
 
   
   ## Questions

@@ -92,6 +92,9 @@ function generateMarkdown(data) {
   * My Github: [${data.username}](https://github.com/${data.username})
 
   * Email me at ${data.email} with any questions.
+
+  ## Video Walkthrough 
+  (https://drive.google.com/file/d/1c0NXR7p05mc5SVqzCluVcL-Li5H_hL2e/view)
   - - -`;
 }
 
