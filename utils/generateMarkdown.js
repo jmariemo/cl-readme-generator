@@ -94,7 +94,7 @@ function generateMarkdown(data) {
   * Email me at ${data.email} with any questions.
 
   ## Video Walkthrough 
-  (https://drive.google.com/file/d/1c0NXR7p05mc5SVqzCluVcL-Li5H_hL2e/view)
+  (https://drive.google.com/file/d/1J98ggOcxf92yuBNrMSL3zF8tKX84Kv-Q/view)
   - - -`;
 }
 
