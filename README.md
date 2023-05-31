@@ -1,9 +1,9 @@
 
-  # Jennifer's Readme Walkthru ![License: Internet Systems Consortium (ISC) License](https://img.shields.io/badge/license-ISC-green.svg)
+  # Jennifer's Readme Walkthru ![License: Apache License 2.0](https://img.shields.io/badge/license-Apache2.0-green.svg)
   
   ## Description
 
-  UCB Bootcamp Module 9 Homework Challenge
+  UCB Bootcamp Module 9 Homework Challenge. This app creates a command-line application that dynamically generates a professional README.md file from a user's input using the inquirer package.
   
   ## Table of Contents
 
@@ -21,25 +21,25 @@
 
   ## Installation
 
-  clone repo, install node modules, run that puppy!
+  clone repo, install packages, go!
 
   ## Usage
 
-  as you wish
+  Go bananas
 
   ## License 
 
- This application is covered under Internet Systems Consortium (ISC) License.
-https://opensource.org/license/isc/
+ This application is covered under Apache License 2.0.
+https://opensource.org/license/apache-2-0/
 Click link for details.
 
   ## Contribution Guidelines
 
-  Don't touch
+  Please do not touch at this time
   
   ## Testing
 
-  Abc 123
+  Edit freely, run in command line for bugs
 
   
   ## Questions
@@ -47,4 +47,7 @@ Click link for details.
   * My Github: [jmariemo](https://github.com/jmariemo)
 
   * Email me at jmariemo@gmail.com with any questions.
+
+  ## Video Walkthrough 
+  (https://drive.google.com/file/d/1J98ggOcxf92yuBNrMSL3zF8tKX84Kv-Q/view)
   - - -
