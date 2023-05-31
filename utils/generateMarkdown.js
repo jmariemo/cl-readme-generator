@@ -1,32 +1,37 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if(license[0]  === "MIT License") {
-    return `![License: MIT](https://img.shields.io/badge/License-MIT-orange.svg)`;
-  } else if(license[0]  === "Unlicense") {
-    return `![License: Unlicense](https://img.shields.io/badge/License-Unlicense-green.svg)`;
-  } else if(license[0]  === "Apache License 2.0") {
-    return `![License: Apache](https://img.shields.io/badge/License-Apache2.0-yellow.svg)`;
+  if (!license) {
+    return ''
   } else {
-    return ``;
+    return `![License: ${license}](https://img.shields.io/badge/license-${license}-green.svg)`;
   }
 }
 
-// TODO: Create a function that returns the license section of README
+// TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if(license[0]  === "MIT License") {
-    return `(https://mit-license.org)`;
-  } else if(license[0]  === "Unlicense") {
-    return `(https://unlicense.org)`;
-  } else if(license[0]  === "Apache License 2.0") {
-    return `(https://www.apache.org/licenses/LICENSE-2.0.html)`;
+  if (license === 'Unlicense') {
+    return 'https://opensource.org/license/unlicense/';
+  } else if (license === 'MIT license (Massachusetts Institute of Technology)') {
+    return 'https://opensource.org/license/mit/';
+  } else if (license === 'GNU General Public License (GNU GPL)') {
+    return 'https://opensource.org/license/gpl-2-0/';
+  } else if (license === 'Internet Systems Consortium (ISC) License') {
+    return 'https://opensource.org/license/isc/';
+  } else if (license === 'Apache License 2.0') {
+    return 'https://opensource.org/license/apache-2-0/';
+  } else (license === '') 
+    return '';
+  }
+
+// TODO: Create a function that returns the license section of README
+// If there is no license, return an empty string
+function renderLicenseSection(license) {
+  if (license) {
+    return `This application is covered under [${license}]${renderLicenseLink(license)}.\nClick link for details.`;
   } else {
-    return ``;
+    return '';
   }
 }
 
@@ -35,12 +40,10 @@ function generateMarkdown(data) {
   return `
   # ${data.title} [${renderLicenseBadge(data.license)}](#license)
   
-  
   ## Description
 
   ${data.description}
   
-
   ## Table of Contents
 
   > [Installation](#installation)
@@ -49,34 +52,27 @@ function generateMarkdown(data) {
   >
   > [License](#license)
   >
-  > [Contribution](#contribution)
+  > [Contribution Guidelines](#contribution)
   >
   > [Testing](#testing)
   >
   > [Questions](#questions)
 
-
   ## Installation
 
   ${data.installation}
-
 
   ## Usage
 
   ${data.usage}
 
-
   ## License 
 
-  This application is covered under the 
-  [${data.license}]${renderLicenseLink(data.license)}.
-  Click for details.
+ [${renderLicenseSection(data.license)}]
 
-
-  ## Contributing
+  ## Contribution Guidelines
 
   ${data.contribution}
-
   
   ## Testing
 

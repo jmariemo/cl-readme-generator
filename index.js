@@ -1,7 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const markdown = require('./utils/generateMarkdown');
 const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
@@ -18,11 +17,6 @@ const questions = [
         },
         {
             type: 'input',
-            message: 'Table of Contents:',
-            name: 'tableContents',
-        },
-        {
-            type: 'input',
             message: 'Installation Instructions:',
             name: 'installation',
         },
@@ -32,10 +26,10 @@ const questions = [
             name: 'usage',
         },
         {
-            type: 'checkbox',
+            type: 'list',
             message: 'License:',
             name: 'license',
-            choices: ['Unlicense','Berkeley Software Distribution License (BSD)', 'MIT license (Massachusetts Institute of Technology)', 'GNU General Public License (GNU GPL)', 'Internet Systems Consortium (ISC) License', 'Apache License 2.0'],
+            choices: ['Unlicense', 'MIT license (Massachusetts Institute of Technology)', 'GNU General Public License (GNU GPL)', 'Internet Systems Consortium (ISC) License', 'Apache License 2.0'],
         },
         {
             type: 'input',
@@ -49,7 +43,7 @@ const questions = [
         },
         {
             type: 'input',
-            message: 'Project Questions',
+            message: 'Project Questions:',
             name: 'questions',
         },
         {
@@ -67,7 +61,7 @@ const questions = [
 // TODO: Create a function to write README file
 function writeReadMe(fileName, data) {
     fs.writeFile(fileName, data, (err) => {
-        err ? console.log(err) : console.log(data);
+        err ? console.log(err) : console.log('Success! Readme complete.');
     })
 }
 

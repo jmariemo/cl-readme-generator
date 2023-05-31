@@ -1,12 +1,10 @@
 
-  # read me genenerator [![License: Apache](https://img.shields.io/badge/License-Apache2.0-yellow.svg)](#license)
-  
+  # JEnnifer project [![License: GNU General Public License (GNU GPL)](https://img.shields.io/badge/license-GNU General Public License (GNU GPL)-green.svg)](#license)
   
   ## Description
 
-  this is a test
+  testing for bugs
   
-
   ## Table of Contents
 
   > [Installation](#installation)
@@ -15,43 +13,37 @@
   >
   > [License](#license)
   >
-  > [Contribution](#contribution)
+  > [Contribution Guidelines](#contribution)
   >
   > [Testing](#testing)
   >
   > [Questions](#questions)
 
-
   ## Installation
 
-  click some buttons
-
+  a b c and then won two three
 
   ## Usage
 
-  use for fun
-
+  free for use
 
   ## License 
 
-  This application is covered under the 
-  [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html).
-  Click for details.
+ [This application is covered under [GNU General Public License (GNU GPL)]https://opensource.org/license/gpl-2-0/.
+Click link for details.]
 
+  ## Contribution Guidelines
 
-  ## Contributing
-
-  don't touch my code rn
-
+  go bananas
   
   ## Testing
 
-  not even there yet
+  jump in the command line
 
   
   ## Questions
 
   * My Github: [jmariemo](https://github.com/jmariemo)
 
-  * Email me at jmariemo@email.com with any questions.
+  * Email me at jmariemo@gmail.com with any questions.
   - - -
