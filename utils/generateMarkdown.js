@@ -29,7 +29,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license) {
-    return `This application is covered under [${license}]${renderLicenseLink(license)}.\nClick link for details.`;
+    return `This application is covered under ${license}.\n${renderLicenseLink(license)}\nClick link for details.`;
   } else {
     return '';
   }
@@ -38,7 +38,7 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-  # ${data.title} [${renderLicenseBadge(data.license)}](#license)
+  # ${data.title} ![license badge](${renderLicenseBadge(data.license)})
   
   ## Description
 
@@ -68,7 +68,7 @@ function generateMarkdown(data) {
 
   ## License 
 
- [${renderLicenseSection(data.license)}]
+ ${renderLicenseSection(data.license)}
 
   ## Contribution Guidelines
 
