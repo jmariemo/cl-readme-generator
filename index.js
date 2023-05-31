@@ -1,22 +1,83 @@
+// TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const markdown = require('./utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown');
 
-inquirer
-    .prompt([
+// TODO: Create an array of questions for user input
+const questions = [
         {
             type: 'input',
-            message: 'What is your message?',
-            name: 'readMeMessage',
-        }
-    ])
-    .then(function(results) {
-        const outputText = `\n${results.readMeMessage}`;
-        fs.appendFile('README.md', outputText, (error) =>
+            message: 'Project Title:',
+            name: 'title',
+        },
         {
-            if (error) {
-                console.log(error);
-            } else {
-                console.log('Success!');
-            }
-        })
+            type: 'input',
+            message: 'Project Description:',
+            name: 'description',
+        },
+        {
+            type: 'input',
+            message: 'Table of Contents:',
+            name: 'tableContents',
+        },
+        {
+            type: 'input',
+            message: 'Installation Instructions:',
+            name: 'installation',
+        },
+        {
+            type: 'input',
+            message: 'Usage Information:',
+            name: 'usage',
+        },
+        {
+            type: 'checkbox',
+            message: 'License:',
+            name: 'license',
+            choices: ['Unlicense','Berkeley Software Distribution License (BSD)', 'MIT license (Massachusetts Institute of Technology)', 'GNU General Public License (GNU GPL)', 'Internet Systems Consortium (ISC) License', 'Apache License 2.0'],
+        },
+        {
+            type: 'input',
+            message: 'Contribution Guidelines:',
+            name: 'contribution',
+        },
+        {
+            type: 'input',
+            message: 'Testing Instructions:',
+            name: 'testing',
+        },
+        {
+            type: 'input',
+            message: 'Project Questions',
+            name: 'questions',
+        },
+        {
+            type: 'input',
+            message: 'Github username:',
+            name: 'username',
+        },
+        {
+            type: 'input',
+            message: 'Contact email:',
+            name: 'email',
+        },
+    ];
+
+// TODO: Create a function to write README file
+function writeReadMe(fileName, data) {
+    fs.writeFile(fileName, data, (err) => {
+        err ? console.log(err) : console.log(data);
     })
+}
+
+// TODO: Create a function to initialize app
+function init() {
+    inquirer.prompt(questions).then(function(results) {
+        const markdownText = generateMarkdown(results);
+        writeReadMe('README.md', markdownText);
+    })
+}
+
+// Function call to initialize app
+init();
